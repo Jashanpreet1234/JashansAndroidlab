@@ -10,8 +10,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // loads the xml file on  the screen
-        // r stands for resouces here
+
         setContentView(R.layout.activity_main);
     }
 }
