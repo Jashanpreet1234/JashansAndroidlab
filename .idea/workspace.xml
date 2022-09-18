@@ -9,9 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="initial commit">
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Commit 5 Removed the extra lines">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_layout_id.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +44,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +65,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/src/main/res/values/themes.xml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="2EiqYCTJAuU7rVRWcHEPEEUUDOV" />
   <component name="ProjectViewState">
@@ -161,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663470614861</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit 5 Removed the extra lines">
+      <created>1663475141818</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663475141818</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit 5 Removed the extra lines">
+      <created>1663475521256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663475521256</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,7 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted the midmap" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Commit 5 Removed the extra lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 5 Removed the extra lines" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
