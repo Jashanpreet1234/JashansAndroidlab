@@ -22,8 +22,10 @@ setContentView(R.layout.activity_main);
 
 //loads thw first Textview
 
-        Textview firstText = findViewById( R.id.firstString );
+        TextView firstText = findViewById( R.id.firstString );
         firstText.setText("Java changed this");
+        String value = firstText.getText().tostring();
+
 
         EditText second = findViewById( R.id.secondString );
         second.setText("I'm an edit Text");
