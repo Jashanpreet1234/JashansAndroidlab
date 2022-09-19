@@ -5,6 +5,7 @@
     <string name="self_destruct" translatable="false" />
     <string name="second">Second string</string>
     <string name="third">Third String</string>
+    <string name="hinttext">hinttext</string>
     <!--    <string name="my_button_text" />-->
 <!--    <string name="hinttext" />-->
 </resources>
