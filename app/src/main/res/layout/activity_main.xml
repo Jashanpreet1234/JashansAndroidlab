@@ -10,14 +10,15 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/mybutton"
+        android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/self_destruct" />
+        android:text="@string/my_button_text"
+        android:hint="@string/hinttext" />
 
 
     <Button
-        android:id="@+id/my_button"
+        android:id="@+id/mybutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_message"/>

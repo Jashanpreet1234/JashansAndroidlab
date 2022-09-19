@@ -5,6 +5,7 @@ plugins {
 android {
     compileSdk 32
 
+
     defaultConfig {
         applicationId "algonquin.cst2335.kaur0776"
         minSdk 22
