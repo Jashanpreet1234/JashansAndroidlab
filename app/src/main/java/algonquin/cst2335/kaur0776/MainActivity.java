@@ -18,17 +18,32 @@ public class MainActivity extends AppCompatActivity {
 //        loads the XML file on screen
 
 setContentView(R.layout.activity_main);
+TextView mytext = findViewById(R.id.textview);
 
 
-//loads thw first Textview
+  Button btn = findViewById(R.id.mybutton);
+  EditText myedit = findViewById(R.id.myedittext);
+btn.setOnClickListener(new View.OnClick(){
+    public void onClick(View v) {
+    String editString = myedit.getText().toString();
+    mytext.setText("Your edit text has:" + editString);
+    }
 
-        TextView firstText = findViewById( R.id.firstString );
-        firstText.setText("Java changed this");
-        String value = firstText.getText().tostring();
+});
+    }
+}
 
 
-        EditText second = findViewById( R.id.secondString );
-        second.setText("I'm an edit Text");
+//
+////loads thw first Textview
+//
+//        TextView firstText = findViewById( R.id.firstString );
+//        firstText.setText("Java changed this");
+//        String value = firstText.getText().tostring();
+//
+//
+//        EditText second = findViewById( R.id.secondString );
+//        second.setText("I'm an edit Text");
 
     });
 }
