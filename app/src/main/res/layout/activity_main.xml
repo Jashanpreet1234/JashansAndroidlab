@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_button_text"
-        android:hint="@string/hinttext" />
+        android:hint="@string/hinttext"
+        android:text="@string/text_message" />
 
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hinttext"
+        android:text="@string/second" />
+
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hinttext"
+        android:text="@string/third" />
 
     <Button
         android:id="@+id/mybutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_message"/>
+        android:text="@string/button_message" />
 
 
 </LinearLayout>
