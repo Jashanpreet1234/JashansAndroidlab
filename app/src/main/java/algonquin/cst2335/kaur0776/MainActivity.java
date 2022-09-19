@@ -15,27 +15,39 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+//        loads the XML file on screen
+
+setContentView(R.layout.activity_main);
+
+
+//loads thw first Textview
+
+        Textview firstText = findViewById(R.id.firststring);
+        firstText.setText("Java changed this");
+
+    });
+}
+}
+
+
 
 
 
 //Variables declarations
-        Button btn = findViewById(R.id.mybutton);
-        TextView mytext = findViewById(R.id.textview);
-      EditText myedit = findViewById(R.id.myedittext);
-
-
+//        Button btn = findViewById(R.id.mybutton);
+//        TextView mytext = findViewById(R.id.textview);
+//      EditText myedit = findViewById(R.id.myedittext);
 //
-String editString = myedit.getText().toString();
-
-mytext.setText("Your edit text has:" + editString);
-
-
-        final Button button = findViewById(R.id.my_button);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-            }
-        });
-    }
-}
+//
+////
+//String editString = myedit.getText().toString();
+//
+//mytext.setText("Your edit text has:" + editString);
+//
+//
+//        final Button button = findViewById(R.id.my_button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                // Code here executes on main thread after user presses button
+//            }
 
