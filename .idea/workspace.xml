@@ -14,7 +14,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Commit 5 Removed the extra lines" />
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Commit 5 Removed the extra lines">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663644331286</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Commit 5 Removed the extra lines">
+      <created>1663677790782</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677790782</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
