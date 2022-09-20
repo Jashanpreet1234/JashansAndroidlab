@@ -17,22 +17,22 @@ public class MainActivity extends AppCompatActivity {
 
 //        loads the XML file on screen
 
-setContentView(R.layout.activity_main);
-TextView mytext = findViewById(R.id.textview);
+        setContentView(R.layout.activity_main);
+        TextView mytext = findViewById(R.id.textview);
 
 
-  Button btn = findViewById(R.id.mybutton);
+        Button btn = findViewById(R.id.mybutton);
 
-  EditText myedit = findViewById(R.id.myedittext);
-btn.setOnClickListener(new View.OnClick(){
-    public void onClick(View v) {
-    String editString = myedit.getText().toString();
-    mytext.setText("Your edit text has:" + editString);
+        EditText myedit = findViewById(R.id.edittext);
+        btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String editString = myedit.getText().toString();
+                mytext.setText("Your edit text has:" + editString);
+            }
+
+        });
     }
-
-});
-    }
-
+}
 
 
 //
@@ -46,9 +46,7 @@ btn.setOnClickListener(new View.OnClick(){
 //        EditText second = findViewById( R.id.secondString );
 //        second.setText("I'm an edit Text");
 
-    });
-}
-}
+
 
 
 

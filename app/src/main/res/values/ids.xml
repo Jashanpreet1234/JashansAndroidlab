@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="my_button" type="id" />
-    <item name="textview" type="id" />
-    <item name="myedittext" type="id">andriod</item>
-</resources>

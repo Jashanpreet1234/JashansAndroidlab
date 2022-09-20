@@ -3,9 +3,6 @@
     <string name="text_message" translatable="false">Hello Australian!</string>
     <string name="button_message" translatable="false">I\'m a button</string>
     <string name="self_destruct" translatable="false" />
+    <string name="hinttext">hi</string>
     <string name="editmessage" tools:ignore="MissingTranslation">I\'m an EditText</string>
-    <string name="third">Third String</string>
-    <string name="hinttext">Write something here</string>
-    <!--    <string name="my_button_text" />-->
-<!--    <string name="hinttext" />-->
 </resources>
