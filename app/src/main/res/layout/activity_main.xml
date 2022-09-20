@@ -18,23 +18,17 @@
 
 
     <EditText
-        android:id="@+id/secondString"
+        android:id="@+id/edittext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/hinttext"
-        android:text="@string/second" />
+        android:text="@string/editmessage" />
 
-    <TextView
-        android:id="@+id/thirdString"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/hinttext"
-        android:text="@string/third" />
 
     <Button
         android:id="@+id/mybutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:text="@string/button_message" />
 
 
