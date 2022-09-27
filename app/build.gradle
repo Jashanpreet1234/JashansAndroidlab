@@ -6,7 +6,9 @@ android {
     compileSdk 32
 
 
-
+buildFeatures{
+    viewBinding true
+}
     defaultConfig {
         applicationId "algonquin.cst2335.kaur0776"
         minSdk 22

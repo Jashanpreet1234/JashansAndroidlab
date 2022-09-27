@@ -5,4 +5,5 @@
     <string name="second">Second string</string>
     <string name="third">Third String</string>
     <string name="hinttext">hinttext</string>
+    <string name="check">check</string>
 </resources>

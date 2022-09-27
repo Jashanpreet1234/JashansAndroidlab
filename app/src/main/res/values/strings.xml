@@ -3,6 +3,13 @@
     <string name="text_message" translatable="false">Hello Australian!</string>
     <string name="button_message" translatable="false">I\'m a button</string>
     <string name="self_destruct" translatable="false" />
-    <string name="hinttext">hi</string>
+    <string name="hinttext">hintText</string>
     <string name="editmessage" tools:ignore="MissingTranslation">I\'m an EditText</string>
+    <string name="checkBox" translatable="false">I\'m a checkbox</string>
+    <string name="switch1" translatable="false">I\'m a switch</string>
+    <string name="radio" translatable="false">I\m the radio button</string>
+    <string name="hello_message">hellow</string>
+    <string name="second">second</string>
+    <string name="third">third</string>
+    <string name="check">check</string>
 </resources>
