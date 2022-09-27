@@ -67,7 +67,9 @@ public class MainActivity extends AppCompatActivity {
         variableBinding.myimagebutton.setImageResource(R.drawable.logo_algonquin);
         variableBinding.myimagebutton.setOnClickListener(click ->
         {
-//            Toast.makeText(this, "The width =" + click.getMeasuredWidth() + " and height =" + click.getMeasuredHeight(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The width =" + variableBinding.myimagebutton.getMeasuredWidth()
+                    + " and height =" + variableBinding.myimagebutton.getMeasuredHeight(), Toast.LENGTH_SHORT).show();
+            ;
             Toast.makeText(this, "this is an ImageButton", Toast.LENGTH_SHORT).show();
 
         });
