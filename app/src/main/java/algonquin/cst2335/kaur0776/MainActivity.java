@@ -6,7 +6,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import algonquin.cst2335.kaur0776.R;
 
 /**
  * This page is created for a password checker application
@@ -101,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 //            checkPasswordComplexity(password);
 
             if(checkPasswordComplexity(password) == true) {
-                tv.setText("Your password meets the requirements. Whoo!");
+                tv.setText("Your password meets the requirements. Whoohooooo!");
             } else
                 tv.setText("You shall not pass!");
         });
