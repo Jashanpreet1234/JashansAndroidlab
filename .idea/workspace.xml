@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Finish week5 with javadoc">
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/algonquin/cst2335/kaur0776/MainActivityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/algonquin/cst2335/kaur0776/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Finished test cases and Javadocs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -345,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667580362003</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished test cases and Javadocs">
+      <created>1667842867488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667842867488</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finished test cases and Javadocs">
+      <created>1667842876174</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667842876174</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,7 +372,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted the midmap" />
     <MESSAGE value="Finish week5 with javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish week5 with javadoc" />
+    <MESSAGE value="Finished test cases and Javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished test cases and Javadocs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
