@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Jashan\'s Androidlab</string>
-    <string name="hello_message">Hello Universe!</string>
+    <string name="hello_message">Type your Password</string>
     <string name="button_message">I\'m a switch</string>
 </resources>
