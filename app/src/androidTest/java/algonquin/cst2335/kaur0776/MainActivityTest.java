@@ -70,7 +70,7 @@ public class MainActivityTest {
 
 
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("password123#$*"));
+        appCompatEditText.perform(replaceText("PASSWORD123#$*"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
         materialButton.perform(click());
@@ -84,7 +84,7 @@ public class MainActivityTest {
 
 
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("password123#$*"));
+        appCompatEditText.perform(replaceText("Password#$*"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
         materialButton.perform(click());
@@ -98,7 +98,7 @@ public class MainActivityTest {
 
 
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("password123#$*"));
+        appCompatEditText.perform(replaceText("Password123"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
         materialButton.perform(click());
