@@ -5,24 +5,30 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="WOrking on week6">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" afterDir="false" />
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="WOrking on Lab6">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoomViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/receive.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Admin\.android\avd\Pixel_2_API_27.avd]" />
   <component name="ExternalProjectsData">
@@ -51,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="Class" />
         <option value="valueResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -186,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663468995038</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WOrking on Lab6">
+      <created>1668225849546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668225849546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted the midmap" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted the midmap" />
+    <MESSAGE value="WOrking on Lab6" />
+    <option name="LAST_COMMIT_MESSAGE" value="WOrking on Lab6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
