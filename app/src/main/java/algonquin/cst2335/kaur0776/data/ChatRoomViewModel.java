@@ -1,4 +1,4 @@
-package algonquin.cst2335.kaur0776;
+package algonquin.cst2335.kaur0776.data;
 
 
 import androidx.lifecycle.MutableLiveData;

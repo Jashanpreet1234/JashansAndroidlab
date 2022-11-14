@@ -11,15 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
 import algonquin.cst2335.kaur0776.data.ChatMessage;
 import algonquin.cst2335.kaur0776.data.ChatRoomViewModel;
-import algonquin.cst2335.kaur0776.databinding.ReceiveMessageBinding;
 import algonquin.cst2335.kaur0776.databinding.ActivityChatRoomBinding;
+import algonquin.cst2335.kaur0776.databinding.ReceiveMessageBinding;
 import algonquin.cst2335.kaur0776.databinding.SentMessageBinding;
 
 public class ChatRoom extends AppCompatActivity {
@@ -111,6 +110,7 @@ public class ChatRoom extends AppCompatActivity {
                 }
 
             } );
+
             binding.receivebutton.setOnClickListener(click -> {
                 SimpleDateFormat sdf = new SimpleDateFormat("EEEE, dd-MMM-yyyy hh-mm-ss a");
                 String currentDateandTime = sdf.format(new Date());

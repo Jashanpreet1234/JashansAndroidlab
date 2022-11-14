@@ -2,4 +2,6 @@
     <string name="app_name">Jashan\'s Androidlab</string>
     <string name="hello_message" tools:ignore="MissingTranslation">Hello World!</string>
     <string name="button_message" translatable="false" tools:ignore="MissingTranslation">I\'m a button</string>
+    <string name="message">message</string>
+    <string name="time">time</string>
 </resources>
