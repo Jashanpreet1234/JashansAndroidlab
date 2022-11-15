@@ -12,19 +12,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="WOrking on Lab6">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Lab 6 done">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatMessageDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MessageDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ReceiveMessageBinding.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/ChatMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/ChatRoomViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/ChatRoomViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/MainViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/receive_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/receive_message.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +54,7 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="valueResourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -101,7 +94,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
@@ -224,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668446703215</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab 6 done">
+      <created>1668456147328</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668456147328</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +242,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deleted the midmap" />
     <MESSAGE value="WOrking on Lab6" />
-    <option name="LAST_COMMIT_MESSAGE" value="WOrking on Lab6" />
+    <MESSAGE value="Lab 6 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 6 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

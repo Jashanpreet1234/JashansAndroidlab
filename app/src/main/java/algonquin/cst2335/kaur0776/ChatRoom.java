@@ -115,7 +115,7 @@ public class ChatRoom extends AppCompatActivity {
 
             @Override
             public void onBindViewHolder(@NonNull MyRowHolder holder, int position) {
-
+ chatMessage= messages.get(position);
                 String obj = chatMessage.message;
                 holder.messageText.setText(obj);
                 String obj2 = chatMessage.timeSent;
