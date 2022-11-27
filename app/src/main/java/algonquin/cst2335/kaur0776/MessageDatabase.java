@@ -1,20 +1,13 @@
 package algonquin.cst2335.kaur0776;
 
-import java.util.List;
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
-public class MessageDatabase implements ChatMessageDAO {
-    @Override
-    public void insertMessage(ChatMessage m) {
 
-    }
+@Database(entities = {ChatMessage.class}, version = 1)
+public abstract class MessageDatabase  extends RoomDatabase {
+public abstract ChatMessageDAO cmDAO();
 
-    @Override
-    public List<ChatMessage> getAllMessages() {
-        return null;
-    }
 
-    @Override
-    public void deleteMessage(ChatMessage m) {
-
-    }
 }
+ 

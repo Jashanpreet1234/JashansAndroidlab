@@ -8,13 +8,13 @@ import androidx.room.Query;
 import java.util.List;
 @Dao
 public interface ChatMessageDAO {
+
     @Insert
-    public void insertMessage(ChatMessage m);
+    long  insertMessage(ChatMessage m);
 
     @Query("Select * from ChatMessage")
     public List<ChatMessage> getAllMessages();
 
     @Delete
-    void deleteMessage(ChatMessage m);
-
+    void deleteMessage(ChatMessage message);
 }
