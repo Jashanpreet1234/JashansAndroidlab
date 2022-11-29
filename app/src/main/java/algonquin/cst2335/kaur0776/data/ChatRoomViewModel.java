@@ -9,6 +9,6 @@ import algonquin.cst2335.kaur0776.ChatMessage;
 
 public class ChatRoomViewModel extends ViewModel {
     public MutableLiveData<ArrayList<ChatMessage>> messages = new MutableLiveData<>();
-    public MutableLiveData<ArrayList<ChatMessage>> selectedMessage = new MutableLiveData<>();
+    public MutableLiveData<ChatMessage> selectedMessage = new MutableLiveData<>();
 
 }

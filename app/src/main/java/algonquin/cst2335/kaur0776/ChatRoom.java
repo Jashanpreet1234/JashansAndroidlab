@@ -24,6 +24,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import com.google.android.material.snackbar.Snackbar;
+import algonquin.cst2335.kaur0776.databinding.ActivityChatRoomBinding;
+import algonquin.cst2335.kaur0776.databinding.ReceiveMessageBinding;
+import algonquin.cst2335.kaur0776.databinding.SentMessageBinding;
+import data.ChatRoomViewModel;
+
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -65,7 +70,7 @@ public class ChatRoom extends AppCompatActivity {
         textInput = findViewById(R.id.textInput);
         recieveButton = findViewById(R.id.recieveButton);
         myToolbar=findViewById(R.id.myToolbar);
-        setSupportActionBar(myToolbar);
+       // setSupportActionBar(myToolbar);
         //  recyclerView.setLayoutManager(new LinearLayoutManager(this));
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 5);
         gridLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL); // set Horizontal Orientation
@@ -99,7 +104,7 @@ public class ChatRoom extends AppCompatActivity {
                 chatMessage.setSentButton(true);
                 messages.add(chatMessage);
                 myAdapter.notifyItemInserted(messages.size() - 1);
-                // messageText=chatMessage.getMessage();
+
                 Executor thread = Executors.newSingleThreadExecutor();
                 thread.execute(() -> {
                     mDAO.insertMessage(chatMessage);
@@ -151,14 +156,13 @@ public class ChatRoom extends AppCompatActivity {
             @Override
             public MyRowHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-//                SentMessageBinding binding = SentMessageBinding.inflate(getLayoutInflater(), parent, false);
-//                return new MyRowHolder(binding.getRoot());
                 if (viewType == 0) {
                     SentMessageBinding binding = SentMessageBinding.inflate(getLayoutInflater(), parent, false);
                     return new MyRowHolder(binding.getRoot());
                 } else {
-                    RecieveMessageBinding binding2 = RecieveMessageBinding.inflate(getLayoutInflater(), parent, false);
-                    return new MyRowHolder(binding2.getRoot());
+                    ReceiveMessageBinding b2 = ReceiveMessageBinding.inflate(getLayoutInflater(), parent, false);
+
+                    return new MyRowHolder(b2.getRoot());
                 }
 
             }
@@ -189,7 +193,16 @@ public class ChatRoom extends AppCompatActivity {
 
     }
 
+    private void run() {
+                   messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+        mDAO.deleteAll();
+        for (int i = 0; i < messages.size(); i++) {
+            messages.remove(i);
 
+        }
+
+//You can then load the RecyclerView
+    }
 
 
     private class MyRowHolder extends RecyclerView.ViewHolder {
@@ -205,40 +218,40 @@ public class ChatRoom extends AppCompatActivity {
                 chatModel.selectedMessage.postValue(selected);
                 ChatMessage thisMessage = messages.get(position);
                 // MyRowHolder newRow = adt.OnCreateViewHolder(null, adt.getItemViewType(position));
-                AlertDialog.Builder builder = new AlertDialog.Builder(ChatRoom.this);
-                builder.setMessage("Do you want to delete the message: " + messageText.getText())
-                        .setTitle("Question: ")
-                        .setNegativeButton("no", (dialog, cl) -> {
-                        })
-                        .setPositiveButton("yes", (dialog, cl) -> {
-                            // ChatMessage m = messages.get(position);
-                            Executor thread = Executors.newSingleThreadExecutor();
-                            thread.execute(() ->
-                            {
-                                //                             messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
-                                mDAO.deleteMessage(thisMessage);
-
-                                //You can then load the RecyclerView
-                            });
-                            messages.remove(position);
-                            myAdapter.notifyItemRemoved(position);
-                            // mDAO.deleteMessage(m);
-
-                            // adt.notifyItemRemoved(position)
-
-
-                            Snackbar.make(messageText, "You deleted message #" + position, Snackbar.LENGTH_LONG).setAction("Undo", clkk -> {
-                                messages.add(position, thisMessage);
-
-                                Executor thread1 = Executors.newSingleThreadExecutor();
-                                thread1.execute(() -> {
-                                    mDAO.insertMessage(thisMessage);
-                                });
-                                myAdapter.notifyItemInserted(position);
-
-                            }).show();
-                        })
-                        .create().show();
+//                AlertDialog.Builder builder = new AlertDialog.Builder(ChatRoom.this);
+//                builder.setMessage("Do you want to delete the message: " + messageText.getText())
+//                        .setTitle("Question: ")
+//                        .setNegativeButton("no", (dialog, cl) -> {
+//                        })
+//                        .setPositiveButton("yes", (dialog, cl) -> {
+//                            ChatMessage m = messages.get(position);
+//                            Executor thread = Executors.newSingleThreadExecutor();
+//                            thread.execute(() ->
+//                            {
+//                                       messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+//                                mDAO.deleteMessage(thisMessage);
+//
+//                                //You can then load the RecyclerView
+//                            });
+//                            messages.remove(position);
+//                            myAdapter.notifyItemRemoved(position);
+//                             mDAO.deleteMessage(m);
+//
+//                            // adt.notifyItemRemoved(position)
+//
+//
+//                            Snackbar.make(messageText, "You deleted message #" + position, Snackbar.LENGTH_LONG).setAction("Undo", clkk -> {
+//                                messages.add(position, thisMessage);
+//
+//                                Executor thread1 = Executors.newSingleThreadExecutor();
+//                                thread1.execute(() -> {
+//                                    mDAO.insertMessage(thisMessage);
+//                                });
+//                                myAdapter.notifyItemInserted(position);
+//
+//                            }).show();
+//                        })
+//                        .create().show();
 
 
             });
@@ -262,17 +275,7 @@ public class ChatRoom extends AppCompatActivity {
         {
             case R.id.item_1:
                 Executor thread = Executors.newSingleThreadExecutor();
-                thread.execute(() ->
-                {
-                    //                             messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
-                    mDAO.deleteAll();
-                    for (int i = 0; i < messages.size(); i++) {
-                        messages.remove(i);
-
-                    }
-
-                    //You can then load the RecyclerView
-                });
+                thread.execute(this::run);
                 //put your ChatMessage deletion code here. If you select this item, you should show the alert dialog
                 //asking if the user wants to delete this message.
                 break;
@@ -284,6 +287,11 @@ public class ChatRoom extends AppCompatActivity {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
                 break;
+
+             case R.id.item_3:
+                   break;
+             case R.id.item_4:
+                 break;
             default:
                 super.onOptionsItemSelected((MenuItem) item);
                 break;

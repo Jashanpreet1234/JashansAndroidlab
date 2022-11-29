@@ -13,25 +13,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Lab 7 and 8 done">
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/my_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_11_45_a_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_11_45_a_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_12_41_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_12_41_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_1_00_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_1_00_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_1_16_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_1_16_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_2_39_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_2_39_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_4_30_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_4_30_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_5_04_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-11-09_5_04_p_m___Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatMessageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatMessageDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MessageDatabaseImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/ChatRoomViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/ChatRoomViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/data/MessageDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/MessageDetailsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_chat_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_chat_room.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,27 +65,15 @@
         <option value="Interface" />
         <option value="valueResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="Week6_RecyclerView" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Week6_RecyclerView" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,8 +122,8 @@
       <recent name="C:\CST2335\app\src\main\res\layout-sw600dp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\CST2335\app\src\main\res\layout-sw600dp" />
       <recent name="C:\CST2335\app\src\main\res\drawable" />
+      <recent name="C:\CST2335\app\src\main\res\layout-sw600dp" />
     </key>
     <key name="android.template.-997182894">
       <recent name="algonquin.cst2335.kaur0776" />
@@ -270,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668535715054</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab 7 and 8 done">
+      <created>1669736972879</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669736972879</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

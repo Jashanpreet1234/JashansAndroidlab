@@ -18,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
          //This loads the toolbar
         setSupportActionBar(variableBinding.myToolbar);
         setContentView(R.layout.activity_main);
+
+
     }
 }
