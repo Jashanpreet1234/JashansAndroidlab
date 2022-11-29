@@ -1,4 +1,4 @@
-package algonquin.cst2335.kaur0776.data;
+package algonquin.cst2335.kaur0776;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,13 +7,13 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import algonquin.cst2335.kaur0776.ChatMessage;
 import algonquin.cst2335.kaur0776.databinding.DetailsLayoutBinding;
 
 public class MessageDetailsFragment extends Fragment {
 
 
         ChatMessage selected;
+
         public MessageDetailsFragment(ChatMessage m){
             selected=m;
         }
