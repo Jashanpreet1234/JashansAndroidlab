@@ -24,11 +24,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
 
 import com.google.android.material.snackbar.Snackbar;
-import algonquin.cst2335.kaur0776.databinding.ActivityChatRoomBinding;
-import algonquin.cst2335.kaur0776.databinding.ReceiveMessageBinding;
-import algonquin.cst2335.kaur0776.databinding.SentMessageBinding;
-import data.ChatRoomViewModel;
-
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -36,9 +31,13 @@ import java.util.Date;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+import algonquin.cst2335.kaur0776.databinding.ActivityChatRoomBinding;
+import algonquin.cst2335.kaur0776.databinding.ReceiveMessageBinding;
+import algonquin.cst2335.kaur0776.databinding.SentMessageBinding;
 import data.ChatRoomViewModel;
 
 public class ChatRoom extends AppCompatActivity {
+
     RecyclerView recyclerView;
     MessageDatabase db;
     ArrayList<ChatMessage> messages;
@@ -70,7 +69,7 @@ public class ChatRoom extends AppCompatActivity {
         textInput = findViewById(R.id.textInput);
         recieveButton = findViewById(R.id.recieveButton);
         myToolbar=findViewById(R.id.myToolbar);
-       // setSupportActionBar(myToolbar);
+        // setSupportActionBar(myToolbar);
         //  recyclerView.setLayoutManager(new LinearLayoutManager(this));
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 5);
         gridLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL); // set Horizontal Orientation
@@ -194,7 +193,7 @@ public class ChatRoom extends AppCompatActivity {
     }
 
     private void run() {
-                   messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+        messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
         mDAO.deleteAll();
         for (int i = 0; i < messages.size(); i++) {
             messages.remove(i);
@@ -217,7 +216,7 @@ public class ChatRoom extends AppCompatActivity {
                 ChatMessage selected=messages.get(position);
                 chatModel.selectedMessage.postValue(selected);
                 ChatMessage thisMessage = messages.get(position);
-                 MyRowHolder newRow = adt.OnCreateViewHolder(null, adt.getItemViewType(position));
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(ChatRoom.this);
                 builder.setMessage("Do you want to delete the message: " + messageText.getText())
                         .setTitle("Question: ")
@@ -275,10 +274,17 @@ public class ChatRoom extends AppCompatActivity {
         {
             case R.id.item_1:
                 Executor thread = Executors.newSingleThreadExecutor();
-                thread.execute(this::run);
-                //put your ChatMessage deletion code here. If you select this item, you should show the alert dialog
-                //asking if the user wants to delete this message.
-                break;
+                thread.execute(() ->
+                {
+                    //                             messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+                    mDAO.deleteAll();
+                    for (int i = 0; i < messages.size(); i++) {
+                        messages.remove(i);
+
+                    }
+
+                    //You can then load the RecyclerView
+                });
             case R.id.item_2:
                 Context context = getApplicationContext();
                 CharSequence text = "Version 1.0, created by Jashanpreet kaur";
@@ -287,7 +293,6 @@ public class ChatRoom extends AppCompatActivity {
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
                 break;
-
 
 
             default:

@@ -10,17 +10,10 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/item_2"
-        android:icon="@drawable/search"
-        app:showAsAction="always"
-        android:title="seach"
+
+        app:showAsAction="never"
+        android:title="about"
         tools:ignore="MenuTitle" />
-    <item
-        android:id="@+id/item_3"
-        app:showAsAction="never"
-        android:title="add"/>
-    <item
-        android:id="@+id/item_4"
-        app:showAsAction="never"
-        android:title="list"/>
+
 
 </menu>
