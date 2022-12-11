@@ -67,9 +67,9 @@ public class ChatRoom extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycleView);
         sendButton = findViewById(R.id.sendButton);
         textInput = findViewById(R.id.textInput);
-        recieveButton = findViewById(R.id.recieveButton);
-        myToolbar=findViewById(R.id.myToolbar);
-        // setSupportActionBar(myToolbar);
+        recieveButton = findViewById(R.id.receiveButton);
+
+        //setSupportActionBar(myToolbar);
         //  recyclerView.setLayoutManager(new LinearLayoutManager(this));
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 5);
         gridLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL); // set Horizontal Orientation
@@ -84,7 +84,7 @@ public class ChatRoom extends AppCompatActivity {
             MessageDetailsFragment chatFragment = new MessageDetailsFragment(newMessageValue );  //newValue is the newly set ChatMessage
             FragmentManager fMgr = getSupportFragmentManager();
             FragmentTransaction tx = fMgr.beginTransaction();
-            tx.add(R.id.fragementLocation, chatFragment);
+            tx.add(R.id.fragmentLocation, chatFragment);
             tx.addToBackStack("");
             tx.commit();
         });

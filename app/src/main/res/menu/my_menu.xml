@@ -7,7 +7,7 @@
         android:id="@+id/item_1"
         android:icon="@drawable/delete"
         android:title="Delete this item"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/item_2"
 
