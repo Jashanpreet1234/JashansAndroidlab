@@ -13,15 +13,66 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="Lab 8 done">
+    <list default="true" id="8fc1fcdd-19df-4af5-9933-fb6b5e91c497" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/libs/.tmp/gradle5191342988898795633.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/.tmp/gradle6768979243140675034.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/.tmp/gradle9432926820447559080.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/.tmp/gradle9947033910972967028.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/02b2077bae99782250bdb8add3baf28f/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/059405008d9af64eaf10a9fecd32847c/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/084f05a21e1e58af30fae95510f50057/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/0ab3af6e9c5e1273e688af4907a5c454/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/0eee2abb1ae0c87a98b6bb39e8ae0eb1/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/143e3cf66ce3f1939337679056c35820/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/2103fb92c016c444cf8b57ada401966e/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/21466b1b74142b4fe1f1d512138d044d/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/221257cd8cea399aabc8aed5585e1871/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/24032e24b0e29aa566324783e083c558/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/30ad94261b19c391a6691872a704ed03/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/406dc9f83f4f223025e72c94796be6c6/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/48bba6d67a8d8d58538e20e7ab2af57c/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/4f0ef35862dbaa4f642e20318f24be3f/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/53144960db6d982b3fc06a391ef7f59f/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/56575cf8c35bf535e65f225ce1d0bc20/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/5a08a2265c82f495e0c4696130d667ed/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/5ad4d84aee06a223c6ffcc88501b68ac/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/5ec008775cc1847bfbaa4937e27cbe76/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/61b9ccce58d4c1ba3e8b93c6bc0891f7/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/6c4b0c4a7a3776e81e0d73b9c60624c2/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/6efd050f3f0fba85a572a093639ce2a8/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/6efd050f3f0fba85a572a093639ce2a8/transformed/viewbinding-7.2.2-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/73aea621d7daa668487d2e104ed55975/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/8461289a7d51c041d9d8a171cb6bb546/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/85943e950a62ea58ed364b1445da9cdb/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/88a36b0cb6279f8deb1203140e3d3aee/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/8ad3a46eca38b93ff540eb5d2ef7f768/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/8fb94ea8e1bdb6fc2977e0f7f3dbddfc/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/92ceaab2721fd4a0a92a2b30ee2c0fdd/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/93da0dcc4f77e10c0d1ff2d7cbb59f03/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/93da0dcc4f77e10c0d1ff2d7cbb59f03/transformed/room-runtime-2.4.3-runtime/classes.dex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/96654f172cda98d2956b38623dce18b9/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/9687524adf3fa34ce2104a977da69eb2/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/9cbfc01d87747e5010409e98491b0788/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/a7b69e9546d4fe094c4b74ed22ce7203/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/a8ca5077e2c2c4e84bf551eaee51b8a2/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/ac8f5dd1e8c7ed565fa980f4ed895aff/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/b13a4a4d500af1fdec7ffa45510126e2/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/b2d223fce3be5c2174ce00753aacb72e/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/c3d1ca6c06f581f1b986bbc73debb4fe/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/c9cc4e189911d6dbd72a38bea7ac48ad/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/ccb3121838c2023986ec7aafa04a5cd5/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/cd998f1c3bd839ca213753244f108e34/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/d70d6678c16ec8b350ae8cbcfba2b1ab/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/dd0823eb2c0f1f90974ed3ccfb9de39e/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/eec7e6d2953fa9120bf03e550b263af7/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/f1da8c54736df2c2534e1855603678b8/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/caches/transforms-3/f2f6e2aaf752a5f4baf698a661ce4dd2/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/daemon/7.3.3/daemon-12936.out.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/algonquin/cst2335/kaur0776/ChatRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_chat_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/activity_chat_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/details_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-sw600dp/details_layout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/receive_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/receive_message.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/sent_message.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/my_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/my_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +84,9 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Admin\.android\avd\Pixel_2_API_27.avd]" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../CST2335\exportToHTML" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -102,6 +156,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -110,7 +165,7 @@
     <property name="android-custom-viewC:/Users/Admin/AppData/Local/Android/Sdk/sources/android-33/android/widget/Button.java_SELECTED" value="Button" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AlexsAndroidLabs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../algonquin clg" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
@@ -267,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670724368355</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lab 9 done">
+      <created>1670730272922</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670730272922</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,12 +344,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Deleted the midmap" />
     <MESSAGE value="WOrking on Lab6" />
     <MESSAGE value="Lab 6 done" />
     <MESSAGE value="Lab 7 and 8 done" />
     <MESSAGE value="Lab 8 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 8 done" />
+    <MESSAGE value="Lab 9 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 9 done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

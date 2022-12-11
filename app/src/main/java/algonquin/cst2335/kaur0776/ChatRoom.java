@@ -49,10 +49,9 @@ public class ChatRoom extends AppCompatActivity {
     Button recieveButton;
     ChatMessage chatMessage = null;
     Toolbar myToolbar;
-
+    int selectedPosition;
     ActivityChatRoomBinding binding;
     private RecyclerView.Adapter myAdapter;
-
 
 
     @Override
@@ -61,7 +60,6 @@ public class ChatRoom extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_room);
-
 
 
         recyclerView = findViewById(R.id.recycleView);
@@ -81,7 +79,7 @@ public class ChatRoom extends AppCompatActivity {
 
         }
         chatModel.selectedMessage.observe(this, (newMessageValue) -> {
-            MessageDetailsFragment chatFragment = new MessageDetailsFragment(newMessageValue );  //newValue is the newly set ChatMessage
+            MessageDetailsFragment chatFragment = new MessageDetailsFragment(newMessageValue);  //newValue is the newly set ChatMessage
             FragmentManager fMgr = getSupportFragmentManager();
             FragmentTransaction tx = fMgr.beginTransaction();
             tx.add(R.id.fragmentLocation, chatFragment);
@@ -193,7 +191,7 @@ public class ChatRoom extends AppCompatActivity {
     }
 
     private void run() {
-        messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+        messages.addAll(mDAO.getAllMessages()); //Once you get the data from database
         mDAO.deleteAll();
         for (int i = 0; i < messages.size(); i++) {
             messages.remove(i);
@@ -213,7 +211,7 @@ public class ChatRoom extends AppCompatActivity {
             ChatMessageDAO mDAO = db.cmDAO();
             itemView.setOnClickListener(clk -> {
                 int position = getAbsoluteAdapterPosition();
-                ChatMessage selected=messages.get(position);
+                ChatMessage selected = messages.get(position);
                 chatModel.selectedMessage.postValue(selected);
                 ChatMessage thisMessage = messages.get(position);
 
@@ -227,14 +225,14 @@ public class ChatRoom extends AppCompatActivity {
                             Executor thread = Executors.newSingleThreadExecutor();
                             thread.execute(() ->
                             {
-                                       messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
+                                messages.addAll(mDAO.getAllMessages()); //Once you get the data from database
                                 mDAO.deleteMessage(thisMessage);
 
                                 //You can then load the RecyclerView
                             });
                             messages.remove(position);
                             myAdapter.notifyItemRemoved(position);
-                             mDAO.deleteMessage(m);
+                            mDAO.deleteMessage(m);
 
                             // adt.notifyItemRemoved(position)
 
@@ -259,6 +257,7 @@ public class ChatRoom extends AppCompatActivity {
         }
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
@@ -269,22 +268,41 @@ public class ChatRoom extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        super.onOptionsItemSelected(item);
 
-        switch( item.getItemId() )
-        {
+        switch (item.getItemId()) {
             case R.id.item_1:
-                Executor thread = Executors.newSingleThreadExecutor();
-                thread.execute(() ->
-                {
-                    //                             messages.addAll( mDAO.getAllMessages() ); //Once you get the data from database
-                    mDAO.deleteAll();
-                    for (int i = 0; i < messages.size(); i++) {
-                        messages.remove(i);
+                TextView messageText = findViewById(R.id.messageText);
 
-                    }
+                ChatMessage selected = messages.get(selectedPosition);
 
-                    //You can then load the RecyclerView
-                });
+                AlertDialog.Builder builder = new AlertDialog.Builder(ChatRoom.this);
+
+                builder.setMessage("Do you want to delete the message: " + messageText.getText())
+                        .setTitle("Question:")
+                        .setNegativeButton("No", (dialog, cl) -> {
+                        })
+                        .setPositiveButton("Yes", (dialog, cl) -> {
+                            Executor thread = Executors.newSingleThreadExecutor();
+                            thread.execute(() -> {
+                                mDAO.deleteMessage(selected);
+                            });
+
+                            ChatMessage removedMessage = messages.get(selectedPosition);
+                            messages.remove(selectedPosition);
+                            myAdapter.notifyItemRemoved(selectedPosition);
+
+                            Snackbar.make(messageText, "You deleted message # " + selectedPosition, Snackbar.LENGTH_LONG)
+                                    .setAction("Undo", c -> {
+
+                                        messages.add(selectedPosition, removedMessage);
+                                        myAdapter.notifyItemInserted(selectedPosition);
+                                    })
+                                    .show();
+                        })
+                        .create().show();
+                break;
+
             case R.id.item_2:
                 Context context = getApplicationContext();
                 CharSequence text = "Version 1.0, created by Jashanpreet kaur";
@@ -295,12 +313,12 @@ public class ChatRoom extends AppCompatActivity {
                 break;
 
 
+
             default:
                 super.onOptionsItemSelected((MenuItem) item);
                 break;
-        }
-
-        return true;
+        }    return true;
     }
 
 }
+
